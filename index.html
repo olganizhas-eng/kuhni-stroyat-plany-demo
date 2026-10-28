@@ -1,18 +1,19 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <!-- 3D-конфигуратор кухонь © 2026 olganizhas-eng (t.me/olgas_olg, olgas.olg@mail.ru). Все права защищены. Сборка demo-2026-10-28 для: демо. Лицензия на использование только на указанных сайтах; копирование, изменение и передача третьим лицам запрещены. -->
+    <!-- 3D-конфигуратор кухонь © 2026 Сажина Ольга Александровна (технический идентификатор: olganizhas-eng; t.me/olgas_olg, olgas.olg@mail.ru). Все права на оригинальный код защищены. Сборка demo-2026-10-28 для: демо. Лицензия на использование только на указанных сайтах; копирование, изменение и передача нашей разработки третьим лицам запрещены. Сторонние компоненты — на условиях своих лицензий. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кухни строят планы — у вашей кухни большие планы</title>
     <meta name="description" content="У вашей кухни большие планы, а у вас полная свобода их менять. Собирайте кухню из модулей, примеряйте фасады и смотрите результат в 3D." />
     <meta name="theme-color" content="#1f2430" />
-    <script type="module" crossorigin src="/kuhni-stroyat-plany-demo/assets/main-H5OOGOX8.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/kuhni-stroyat-plany-demo/favicon.svg" />
+    <script type="module" crossorigin src="/kuhni-stroyat-plany-demo/assets/main-_ik0L0Ss.js"></script>
     <link rel="modulepreload" crossorigin href="/kuhni-stroyat-plany-demo/assets/modulepreload-polyfill-P2Xu9kJm.js">
-    <link rel="stylesheet" crossorigin href="/kuhni-stroyat-plany-demo/assets/main-DLlxvvcD.css">
+    <link rel="stylesheet" crossorigin href="/kuhni-stroyat-plany-demo/assets/main-BdGROljT.css">
   </head>
   <body>
-    <div class="demo-note">Демо-сайт: студия, телефоны и адрес вымышлены. Конфигуратор настоящий.</div>
+    <div class="demo-note">Демо-сайт: студия, телефоны и адрес вымышлены. Конфигуратор настоящий, но заявки никуда не отправляются.</div>
 
     <header class="top">
       <a class="logo" href="/kuhni-stroyat-plany-demo/" aria-label="Кухни строят планы — на главную"><span class="logo-mark" aria-hidden="true"></span>Кухни строят планы</a>
@@ -20,6 +21,7 @@
         <a href="#steps">Как это работает</a>
         <a href="#price">Цена</a>
         <a href="#materials">Материалы</a>
+        <a href="#demo-scope">Что в демо</a>
         <a href="#questions">Вопросы</a>
       </nav>
       <a class="btn btn-small" href="/kuhni-stroyat-plany-demo/configurator/">Собрать кухню</a>
@@ -81,7 +83,7 @@
           <li>
             <span class="num">4</span>
             <h3>Заявка</h3>
-            <p>Сервер сам пересчитает цену по каталогу студии и сохранит заявку. Студия получит сообщение в Telegram или MAX с составом кухни.</p>
+            <p>В рабочей версии сервер студии пересчитывает цену по её каталогу и присылает сообщение в Telegram или MAX с составом кухни. В этом демо заявка никуда не уходит: форма только показывает, как это выглядит.</p>
           </li>
         </ol>
         <p class="more"><a class="btn" href="/kuhni-stroyat-plany-demo/configurator/">Попробовать на своей кухне</a></p>
@@ -120,6 +122,33 @@
           <li><img src="/kuhni-stroyat-plany-demo/textures/white-quartz/color.jpg" width="320" height="320" loading="lazy" alt="Белый кварц" /><span>Белый кварц</span></li>
         </ul>
         <p class="fine">В демо это текстуры реальных материалов, а не декоры конкретных производителей. Свои декоры, цены и фото студия вносит в таблицу каталога.</p>
+      </section>
+
+<section class="block block-demo" id="demo-scope" aria-labelledby="scope-h">
+        <h2 id="scope-h">Что работает в демо, а что подключается при внедрении</h2>
+        <p class="lead-sm">Конфигуратор здесь настоящий, его можно пробовать сколько угодно. Но это витрина: студия, цены и контакты вымышлены, а часть функций отключена.</p>
+        <div class="scope">
+          <div class="scope-col">
+            <h3>Работает прямо сейчас</h3>
+            <ul>
+              <li>3D-кухня: четыре формы, размеры стен, автоподбор шкафов и ручная правка</li>
+              <li>Фасады, столешницы, фурнитура, интерьер, свет и ракурсы</li>
+              <li>Ориентировочная цена в трёх уровнях: ставки взяты из открытых прайсов, без наценки студии</li>
+              <li>Спецификация: её можно скопировать</li>
+              <li>«Панель ателье» в учебном виде: заявки и цены хранятся только в вашем браузере</li>
+            </ul>
+          </div>
+          <div class="scope-col">
+            <h3>Предусмотрено для внедрения у студии</h3>
+            <ul>
+              <li>Приём заявок на сервер студии и сообщения в Telegram или MAX. Серверная часть проверена на тестовых адресах, в демо она отключена</li>
+              <li>Каталог, цены, наценка, контакты и политика самой студии вместо демонстрационных</li>
+              <li>Настоящие фото декоров студии</li>
+              <li>Привязка конфигуратора к сайту студии по лицензионному договору</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fine">В демо форма записи на замер принимает только вымышленные данные и ничего не отправляет. Настоящие имя и телефон вводить не нужно.</p>
       </section>
 
       <section class="block block-taupe" id="questions" aria-labelledby="q-h">
