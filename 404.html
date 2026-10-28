@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- 3D-конфигуратор кухонь © 2026 olganizhas-eng (t.me/olgas_olg, olgas.olg@mail.ru). Все права защищены. Сборка demo-2026-10-28 для: демо. Лицензия на использование только на указанных сайтах; копирование, изменение и передача третьим лицам запрещены. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Кухни строят планы — у вашей кухни большие планы</title>
+    <meta name="description" content="У вашей кухни большие планы, а у вас полная свобода их менять. Собирайте кухню из модулей, примеряйте фасады и смотрите результат в 3D." />
+    <meta name="theme-color" content="#1f2430" />
+    <script type="module" crossorigin src="/kuhni-stroyat-plany-demo/assets/main-H5OOGOX8.js"></script>
+    <link rel="modulepreload" crossorigin href="/kuhni-stroyat-plany-demo/assets/modulepreload-polyfill-P2Xu9kJm.js">
+    <link rel="stylesheet" crossorigin href="/kuhni-stroyat-plany-demo/assets/main-DLlxvvcD.css">
+  </head>
+  <body>
+    <div class="demo-note">Демо-сайт: студия, телефоны и адрес вымышлены. Конфигуратор настоящий.</div>
+
+    <header class="top">
+      <a class="logo" href="/kuhni-stroyat-plany-demo/" aria-label="Кухни строят планы — на главную"><span class="logo-mark" aria-hidden="true"></span>Кухни строят планы</a>
+      <nav class="nav" aria-label="Разделы">
+        <a href="#steps">Как это работает</a>
+        <a href="#price">Цена</a>
+        <a href="#materials">Материалы</a>
+        <a href="#questions">Вопросы</a>
+      </nav>
+      <a class="btn btn-small" href="/kuhni-stroyat-plany-demo/configurator/">Собрать кухню</a>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" data-look="kashemir" aria-labelledby="h1">
+        <div class="hero-copy">
+          <p class="eyebrow">Кухни на заказ · Тихоярск</p>
+          <h1 id="h1"><span class="w" style="--i:0">У</span> <span class="w" style="--i:1">вашей</span> <span class="w" style="--i:2">кухни</span> <span class="w" style="--i:3">большие</span> <span class="w" style="--i:4">планы.</span></h1>
+          <p class="lead">А у вас — полная свобода их менять. Собирайте кухню из модулей, примеряйте фасады и смотрите результат в 3D.</p>
+          <div class="cta">
+            <a class="btn" href="/kuhni-stroyat-plany-demo/configurator/">Собрать свою кухню</a>
+            <a class="btn btn-ghost" href="#price">Сколько это стоит</a>
+          </div>
+        </div>
+        <figure class="scene">
+          <div class="shot">
+            <img id="scene-img" src="/kuhni-stroyat-plany-demo/landing/looks/l_shaped-kashemir.jpg" width="1520" height="1080" alt="Угловая кухня, расцветка «Кашемир и дуб», 3D-снимок из конфигуратора" fetchpriority="high" />
+          </div>
+          <div class="picker" id="picker" role="group" aria-label="Выберите форму кухни и расцветку">
+            <div class="pick-row" data-group="form" role="group" aria-label="Форма">
+              <span class="pick-k">Форма</span>
+              <button type="button" data-v="straight" aria-pressed="false">Прямая</button>
+              <button type="button" data-v="l_shaped" aria-pressed="true">Угловая</button>
+              <button type="button" data-v="u_shaped" aria-pressed="false">П-образная</button>
+              <button type="button" data-v="island" aria-pressed="false">С островом</button>
+            </div>
+            <div class="pick-row pick-looks" data-group="look" role="group" aria-label="Расцветка">
+              <span class="pick-k">Цвет</span>
+              <button type="button" class="sw" data-v="kashemir" aria-pressed="true" aria-label="Кашемир и дуб" title="Кашемир и дуб"><i class="dot" style="background:#C5BBB0;box-shadow:inset -7px 0 0 #D9B382"></i></button>
+              <button type="button" class="sw" data-v="grafit" aria-pressed="false" aria-label="Графит и орех" title="Графит и орех"><i class="dot" style="background:#2B2E35;box-shadow:inset -7px 0 0 #5B3A2A"></i></button>
+              <button type="button" class="sw" data-v="moloko" aria-pressed="false" aria-label="Молоко и шалфей" title="Молоко и шалфей"><i class="dot" style="background:#9DBFAA;box-shadow:inset -7px 0 0 #EEEAE2"></i></button>
+              <span class="look-name" id="look-name" aria-live="polite">Кашемир и дуб</span>
+            </div>
+          </div>
+          <a id="scene-link" class="cap-link" href="/kuhni-stroyat-plany-demo/configurator/?form=l_shaped&amp;look=kashemir">Открыть в конфигураторе с этой раскладкой →</a>
+        </figure>
+      </section>
+
+      <section class="block" id="steps" aria-labelledby="steps-h">
+        <h2 id="steps-h">Четыре шага от голой стены до заявки</h2>
+        <ol class="steps">
+          <li>
+            <span class="num">1</span>
+            <h3>Стены</h3>
+            <p>Прямая, угловая, П-образная или с островом. Длина каждой стены от угла до угла, целиком.</p>
+          </li>
+          <li>
+            <span class="num">2</span>
+            <h3>Шкафы встают сами</h3>
+            <p>Мойка у угла, посудомойка рядом, между мойкой и варочной шкаф. Остаток до 99 мм закрывает добор. Пеналы и холодильник встают на свободный край, не перед окном.</p>
+          </li>
+          <li>
+            <span class="num">3</span>
+            <h3>Подправьте по-своему</h3>
+            <p>Тип и ширина любого шкафа, порядок, добавить, убрать. Не помещается: соседние подвинутся по стандартным ширинам, а конфигуратор скажет, что поменял.</p>
+          </li>
+          <li>
+            <span class="num">4</span>
+            <h3>Заявка</h3>
+            <p>Сервер сам пересчитает цену по каталогу студии и сохранит заявку. Студия получит сообщение в Telegram или MAX с составом кухни.</p>
+          </li>
+        </ol>
+        <p class="more"><a class="btn" href="/kuhni-stroyat-plany-demo/configurator/">Попробовать на своей кухне</a></p>
+      </section>
+
+      <section class="block block-ink" id="price" aria-labelledby="price-h">
+        <div class="price-grid">
+          <div>
+            <h2 id="price-h">Из чего складывается цена</h2>
+            <p class="lead-sm">Цена считается по реальным шкафам из вашей раскладки. Передвинули шкаф или поменяли ширину: сумма изменилась.</p>
+            <ul class="parts">
+              <li><b>Корпуса</b> по метру: нижние, верхние, пеналы</li>
+              <li><b>Фасады</b> по площади, цена выбранного декора</li>
+              <li><b>Столешница</b> за погонный метр и установка</li>
+              <li><b>Фурнитура:</b> петли, ящики, ручки или профиль Gola</li>
+              <li><b>Наполнение и сборка</b></li>
+            </ul>
+            <p class="fine">Мойка, смеситель и техника показаны для наглядности и в смету мебели не входят. Это ориентир, а не договорная цена: окончательную сумму называют после замера.</p>
+          </div>
+          <aside class="sample" aria-label="Пример расчёта">
+            <p class="sample-k">Пример в демо-каталоге</p>
+            <p class="sample-t">Угловая кухня 3,0 × 2,4 м, пенал, холодильник, верх из шпона</p>
+            <p class="sample-n">384 302 ₽</p>
+            <p class="fine">Уровень «Оптимум». Ставки взяты из открытых прайсов, наценка студии не заложена.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="block" id="materials" aria-labelledby="mat-h">
+        <h2 id="mat-h">Материалы, как они выглядят</h2>
+        <p class="lead-sm">В 3D фасады и столешницы лежат с настоящими текстурами. Шпон видно по волокну, камень по прожилкам.</p>
+        <ul class="swatches">
+          <li><img src="/kuhni-stroyat-plany-demo/textures/oak/color.jpg" width="320" height="320" loading="lazy" alt="Шпон дуба" /><span>Шпон дуба</span></li>
+          <li><img src="/kuhni-stroyat-plany-demo/textures/calacatta/color.jpg" width="320" height="320" loading="lazy" alt="Керамогранит под мрамор" /><span>Керамогранит под мрамор</span></li>
+          <li><img src="/kuhni-stroyat-plany-demo/textures/black-stone/color.jpg" width="320" height="320" loading="lazy" alt="Компакт-ламинат под чёрный камень" /><span>Компакт-ламинат под камень</span></li>
+          <li><img src="/kuhni-stroyat-plany-demo/textures/white-quartz/color.jpg" width="320" height="320" loading="lazy" alt="Белый кварц" /><span>Белый кварц</span></li>
+        </ul>
+        <p class="fine">В демо это текстуры реальных материалов, а не декоры конкретных производителей. Свои декоры, цены и фото студия вносит в таблицу каталога.</p>
+      </section>
+
+      <section class="block block-taupe" id="questions" aria-labelledby="q-h">
+        <h2 id="q-h">Вопросы, которые задают на третьей минуте</h2>
+        <div class="qa" id="qa">
+          <div class="qa-list" role="group" aria-label="Выберите вопрос">
+            <button type="button" data-q="0" aria-pressed="true">Стена кривая или длина не сходится?</button>
+            <button type="button" data-q="1" aria-pressed="false">Можно поставить шкаф, которого нет в списке?</button>
+            <button type="button" data-q="2" aria-pressed="false">Насколько точна цена?</button>
+            <button type="button" data-q="3" aria-pressed="false">Что с окном?</button>
+            <button type="button" data-q="4" aria-pressed="false">Куда уйдёт моя заявка?</button>
+            <button type="button" data-q="5" aria-pressed="false">Нужны ли размеры техники?</button>
+          </div>
+          <div class="qa-card" id="qa-card" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="final" aria-labelledby="fin-h">
+        <h2 id="fin-h">Две минуты, и ваша кухня уже на экране</h2>
+        <a class="btn" href="/kuhni-stroyat-plany-demo/configurator/">Собрать свою кухню</a>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div>
+        <p class="logo foot-logo"><span class="logo-mark" aria-hidden="true"></span>Кухни строят планы</p>
+        <p>Кухни на заказ. Тихоярск, ул. Столярная, 12 (вымышленный адрес)</p>
+      </div>
+      <div>
+        <p>+7 (900) 000-00-05</p>
+        <p>hello@kuhni-plany.example</p>
+        <p>Telegram: @kuhni_plany_demo</p>
+      </div>
+      <div>
+        <p><a href="/kuhni-stroyat-plany-demo/politika/">Политика обработки персональных данных</a></p>
+        <p class="fine"><a href="https://www.zachemknopka.ru/#hero" target="_blank" rel="noopener">Дизайн и разработка — «Зачем сайту кнопка», 2026</a></p>
+      </div>
+    </footer>
+
+  </body>
+</html>
